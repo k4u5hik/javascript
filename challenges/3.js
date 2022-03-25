@@ -21,14 +21,20 @@
 9. log message
 */
 
-const score1 = 10
-const score2 = 20
-const score3 = 30
-const total = score1 + score2 + score3
-const plates = 20
-const people = 7
-let remaining = plates % people
-remaining++
-const message = "There are " + remaining + " plates available"
+// const score1 = 10
+// const score2 = 20
+// const score3 = 30
+// const total = score1 + score2 + score3
+// const plates = 20
+// const people = 7
+// let remaining = plates % people
+// remaining++
+// const message = "There are " + remaining + " plates available"
+// console.log(total)
+// console.log(message)
+
+const bird = "crow"
+const colour = "black"
+const total = bird - colour
 console.log(total)
-console.log(message)
+//NaN = Not a number
