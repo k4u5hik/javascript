@@ -1,23 +1,23 @@
 // 1 inch is equal to 2.54cm
 
 function convertToCm(inches) {
-  // Function parameters are the names listed in the function's definition.
-  // The function is called with the parameters initialized to the arguments.
-  const newValue = inches * 2.54
-  return newValue
-  // return is the value that is returned from the function.
+  const cmValue = inches * 2.54
+  return cmValue
 }
-const width = convertToCm(1)
-// Function arguments are the real values passed to the function.
-// The function is called with the arguments supplied.
-// Parameters are initialized to the values of the arguments supplied.
-const height = convertToCm(2)
-// Function arguments are the real values passed to the function.
-// The function is called with the arguments supplied.
-// Parameters are initialized to the values of the arguments supplied.
+// Function parameters are the names listed in the function's definition.
+// The function is called with the parameters initialized to the arguments.
+// return is the value that is returned from the function.
+// inches is the parameter.
 
-const dimensionInCm = [width, height]
+const widthInInches = convertToCm(12)
+const heightInInches = convertToCm(23)
+// Function arguments are the real values passed to the function.
+// The function is called with the arguments supplied.
+// Parameters are initialized to the values of the arguments supplied.
+// 12 and 23 are the arguments.
+
+const dimensionInCm = [widthInInches, heightInInches]
 console.log(dimensionInCm)
 
 // Output
-// [2.54, 5.08]
+// [54.8, 91.6]
