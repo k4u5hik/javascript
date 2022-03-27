@@ -12,8 +12,8 @@ function convertToCm(inches) {
 const width = convertToCm(1)
 const height = convertToCm(2)
 
-const dimension = [width, height]
-console.log(dimension)
+const dimensionInCm = [width, height]
+console.log(dimensionInCm)
 
 // Output
 // [2.54, 5.08]
