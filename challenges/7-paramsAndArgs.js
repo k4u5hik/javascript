@@ -9,8 +9,8 @@ function convertToCm(inches) {
 // return is the value that is returned from the function.
 // inches is the parameter.
 
-const widthInInches = convertToCm(12)
-const heightInInches = convertToCm(23)
+const widthInInches = convertToCm(100)
+const heightInInches = convertToCm(200)
 // Function arguments are the real values passed to the function.
 // The function is called with the arguments supplied.
 // Parameters are initialized to the values of the arguments supplied.
@@ -19,5 +19,4 @@ const heightInInches = convertToCm(23)
 const dimensionInCm = [widthInInches, heightInInches]
 console.log(dimensionInCm)
 
-// Output
-// [54.8, 91.6]
+// Output: [254, 508]
