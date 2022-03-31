@@ -10,4 +10,4 @@ function fullName({ firstName, lastName }) {
   return fullName.toUpperCase()
 }
 
-console.log(fullName({ firstName: "John", lastName: "Doe" })));
+console.log(fullName({ firstName: "John", lastName: "Doe" }))
