@@ -7,7 +7,15 @@ function calc(arr) {
     total += arr[i]
   }
   console.log(total)
+  return total
 }
 
-calc(gas)
-calc(food)
+const gasTotal = calc(gas)
+const foodTotal = calc(food)
+const randomTotal = calc([1, 2, 3, 4, 5])
+
+console.log({
+  gas: gasTotal,
+  food: foodTotal,
+  misc: randomTotal,
+})
