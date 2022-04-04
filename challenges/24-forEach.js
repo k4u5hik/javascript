@@ -27,8 +27,19 @@ const people = [
 // map does not change size of the original array.
 // map uses values from the original array as arguments to the callback function.
 
-console.log(map1)
-// expected output: Array [2, 8, 18, 32]
+// const ages = people.map(function (person) {
+//   return `${person.name} is ${person.age} years old.`
+// })
 
-const ages = people.map((person) => person.age)
-console.log(ages)
+// document.body.innerHTML = ages.join("<br>")
+// console.log(ages)
+
+// filter method returns a new array.
+// filter does not change the size of the original array.
+// filter uses values from the original array as arguments to the callback function.
+
+const youngPeople = people.filter(function (person) {
+  return person.age < 21
+})
+
+console.log(youngPeople)
