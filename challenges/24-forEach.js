@@ -12,9 +12,9 @@
 // does not return a new array.
 
 const people = [
-  { name: "John", age: 20, job: "designer" },
-  { name: "Jane", age: 21, job: "developer" },
-  { name: "Joe", age: 22, job: "teacher" },
+  { name: "John", age: 20, job: "designer", id: 1 },
+  { name: "Jane", age: 21, job: "developer", id: 2 },
+  { name: "Joe", age: 22, job: "teacher", id: 3 },
 ]
 
 // function showPerson(person) {
@@ -38,13 +38,26 @@ const people = [
 // filter does not change the size of the original array.
 // filter uses values from the original array as arguments to the callback function.
 
-const youngPeople = people.filter(function (person) {
-  return person.age < 21
+// const youngPeople = people.filter(function (person) {
+//   return person.age < 21
+// })
+
+// const developers = people.filter(function (person) {
+//   return person.job === "developer"
+// })
+
+// console.log(youngPeople)
+// console.log(developers)
+
+//find method returns the first element in the array that satisfies the provided testing function.
+//find does not change the size of the original array.
+//find uses values from the original array as arguments to the callback function.
+// find returns a single instance of the first element in the array that satisfies the provided testing function.
+// find returns undefined if no element in the array satisfies the provided testing function.
+// find is great for finding unique values in an array.
+
+const person = people.find(function (person) {
+  return person.id === 2
 })
 
-const developers = people.filter(function (person) {
-  return person.job === "developer"
-})
-
-console.log(youngPeople)
-console.log(developers)
+console.log(person)
