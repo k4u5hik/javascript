@@ -17,7 +17,7 @@ const people = [
 ]
 
 function showPerson(person) {
-  console.log(person.job)
+  console.log(person.job.toUpperCase())
 }
 
 people.forEach(showPerson)
