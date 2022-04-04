@@ -72,13 +72,16 @@
 // The fourth invocation with accumulator set to the result of the third invocation.
 
 const people = [
-  { name: "John", age: 20, job: "designer", id: 1 },
-  { name: "Jane", age: 21, job: "developer", id: 2 },
-  { name: "Joe", age: 22, job: "teacher", id: 3 },
+  { name: "John", age: 20, job: "designer", id: 1, salary: 100000 },
+  { name: "Jane", age: 21, job: "developer", id: 2, salary: 200000 },
+  { name: "Joe", age: 22, job: "teacher", id: 3, salary: 300000 },
 ]
 
-const total = people.reduce(function (accumulator, person) {
-  return accumulator + person.age
+const total = people.reduce(function (accumulator, currItem) {
+  console.log(`total ${accumulator}`)
+  console.log(`current money: ${currItem.salary}`)
+  accumulator += currItem.salary
+  return accumulator
 }, 0)
 
 console.log(total) // 63
