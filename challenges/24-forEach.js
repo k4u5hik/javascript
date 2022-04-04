@@ -12,8 +12,8 @@
 // does not return a new array.
 
 const people = [
-  { name: "John", age: 20, job: "developer" },
-  { name: "Jane", age: 21, job: "designer" },
+  { name: "John", age: 20, job: "designer" },
+  { name: "Jane", age: 21, job: "developer" },
   { name: "Joe", age: 22, job: "teacher" },
 ]
 
@@ -42,4 +42,9 @@ const youngPeople = people.filter(function (person) {
   return person.age < 21
 })
 
+const developers = people.filter(function (person) {
+  return person.job === "developer"
+})
+
 console.log(youngPeople)
+console.log(developers)
