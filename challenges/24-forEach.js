@@ -11,11 +11,11 @@
 // The forEach method is called on the array [1, 2, 3, 4, 5].
 // does not return a new array.
 
-const people = [
-  { name: "John", age: 20, job: "designer", id: 1 },
-  { name: "Jane", age: 21, job: "developer", id: 2 },
-  { name: "Joe", age: 22, job: "teacher", id: 3 },
-]
+// const people = [
+//   { name: "John", age: 20, job: "designer", id: 1 },
+//   { name: "Jane", age: 21, job: "developer", id: 2 },
+//   { name: "Joe", age: 22, job: "teacher", id: 3 },
+// ]
 
 // function showPerson(person) {
 //   console.log(person.job.toUpperCase())
@@ -56,8 +56,29 @@ const people = [
 // find returns undefined if no element in the array satisfies the provided testing function.
 // find is great for finding unique values in an array.
 
-const person = people.find(function (person) {
-  return person.id === 2
-})
+// const person = people.find(function (person) {
+//   return person.id === 2
+// })
 
-console.log(person)
+// console.log(person)
+
+// reduce method returns a single value.
+// reduce does not change the size of the original array.
+// reduce uses values from the original array as arguments to the callback function.
+// reduce returns a single value. The value returned by the callback function is the accumulator.
+// The accumulator is the result of the previous callback function invocation.
+// The first invocation of the callback function is with accumulator set to the first element in the array and the second invocation with accumulator set to the result of the first invocation.
+// The third invocation with accumulator set to the result of the second invocation.
+// The fourth invocation with accumulator set to the result of the third invocation.
+
+const people = [
+  { name: "John", age: 20, job: "designer", id: 1 },
+  { name: "Jane", age: 21, job: "developer", id: 2 },
+  { name: "Joe", age: 22, job: "teacher", id: 3 },
+]
+
+const total = people.reduce(function (accumulator, person) {
+  return accumulator + person.age
+}, 0)
+
+console.log(total) // 63
