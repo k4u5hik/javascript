@@ -9,20 +9,32 @@ const updatedStudents = students.map(function (student) {
   }
 })
 
-console.log(updatedStudents)
+// console.log(updatedStudents)
 
 const highScores = students.filter(function (student) {
   return student.score > 80
 })
 
-console.log(highScores)
+// console.log(highScores)
 
 // difference in the find and filter method is that the find method returns the first element that matches the condition whereas the filter method returns an array of all the elements that match the condition.
 
 const specificId = students.find(function (student) {
   return student.id === 2
 })
+// console.log(
+//   "🚀 ~ file: 25-arrayExercise.js ~ line 25 ~ specificId ~ specificId",
+//   specificId
+// )
+
+// reduce method is used to reduce the array to a single value.
+
+const averageScore =
+  students.reduce(function (acc, student) {
+    return acc + student.score
+  }, 0) / students.length
+
 console.log(
-  "🚀 ~ file: 25-arrayExercise.js ~ line 25 ~ specificId ~ specificId",
-  specificId
+  "🚀 ~ file: 25-arrayExercise.js ~ line 33 ~ averageScore",
+  averageScore
 )
