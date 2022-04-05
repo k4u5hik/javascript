@@ -16,3 +16,13 @@ const highScores = students.filter(function (student) {
 })
 
 console.log(highScores)
+
+// difference in the find and filter method is that the find method returns the first element that matches the condition whereas the filter method returns an array of all the elements that match the condition.
+
+const specificId = students.find(function (student) {
+  return student.id === 2
+})
+console.log(
+  "🚀 ~ file: 25-arrayExercise.js ~ line 25 ~ specificId ~ specificId",
+  specificId
+)
