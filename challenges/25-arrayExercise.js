@@ -34,7 +34,24 @@ const averageScore =
     return acc + student.score
   }, 0) / students.length
 
+// console.log(
+//   "🚀 ~ file: 25-arrayExercise.js ~ line 33 ~ averageScore",
+//   averageScore
+// )
+
+// Example for reduce method:
+// Counting the number of times favorite subjects are repeated
+
+const survey = students.reduce(function (survey, student) {
+  const favSubject = student.favouriteSubject
+  if (survey[favSubject]) {
+    survey[favSubject]++
+  } else {
+    survey[favSubject] = 1
+  }
+  return survey
+}, {})
 console.log(
-  "🚀 ~ file: 25-arrayExercise.js ~ line 33 ~ averageScore",
-  averageScore
+  "🚀 ~ file: 25-arrayExercise.js ~ line 47 ~ survey ~ survey",
+  survey
 )
