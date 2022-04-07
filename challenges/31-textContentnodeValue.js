@@ -1,7 +1,11 @@
 // nodeValue
 // textContent
 
-const item = document.getElementById("special");
+var byId = function (id) {
+  return document.getElementById(id);
+};
+
+const item = byId("special");
 const value = item.firstChild.nodeValue;
 const easyValue = item.textContent;
 
