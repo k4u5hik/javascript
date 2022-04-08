@@ -6,20 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DOM</title>
     <style>
-      .btn {
-        font-size: 2rem;
-        background: lightgray;
+      .red {
+        background: red;
+        color: white;
         text-transform: uppercase;
+        font-size: 2rem;
+      }
+      .blue {
+        background: blue;
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 10px;
+      }
+      .btn {
+        background: #f15025;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
       }
     </style>
   </head>
   <body>
-    <ul>
-      <li class="first" id="special">i have class of first</li>
-      <a href="first.html" id="link">random link</a>
-      <li>i have no attributes</li>
-    </ul>
+    <h2>events in javascript</h2>
+    <button class="btn">click me</button>
     <!-- javascript -->
-    <script src="32-getandsetattr.js"></script>
+    <p onclick="this.classList.add('red')">the old style</p>
+    <script src="33-events.js"></script>
   </body>
 </html>
