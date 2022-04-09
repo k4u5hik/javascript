@@ -12,25 +12,29 @@
         text-transform: uppercase;
         font-size: 2rem;
       }
-      .blue {
-        background: blue;
-        color: white;
-        text-transform: capitalize;
-        letter-spacing: 10px;
-      }
       .btn {
         background: #f15025;
         color: white;
         font-size: 1.2rem;
         border: none;
       }
+      .blue {
+        background: blue;
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 10px;
+      }
+      a {
+        display: inline-block;
+        margin-top: 100vh;
+      }
     </style>
   </head>
   <body>
-    <h2>events in javascript</h2>
     <button class="btn">click me</button>
+    <h1>some heading</h1>
+    <a href="#" id="link">random link</a>
     <!-- javascript -->
-    <p onclick="this.classList.add('red')">the old style</p>
-    <script src="33-events.js"></script>
+    <script src="34-eventObject.js"></script>
   </body>
 </html>
