@@ -5,5 +5,6 @@ btn.forEach(function (btn) {
     // console.log(e.currentTarget);
     // e.currentTarget.style.color = "green";
     console.log("target", e.target);
+    e.target.style.color = "green";
   });
 });
