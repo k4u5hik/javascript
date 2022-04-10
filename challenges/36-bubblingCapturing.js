@@ -10,10 +10,10 @@ const list = document.querySelector(".list-items");
 
 function showBubbling(e) {
   console.log("current target", e.currentTarget);
-  console.log("bubbling", e.target);
-  if (e.target.classList.contains("link")) {
-    console.log("you clicked a link");
-  }
+  //   console.log("bubbling", e.target);
+  //   if (e.target.classList.contains("link")) {
+  //     console.log("you clicked a link");
+  //   }
 }
 
 function stopPropagation(e) {
@@ -21,7 +21,9 @@ function stopPropagation(e) {
   e.stopPropagation();
 }
 
-list.addEventListener("click", stopPropagation);
-container.addEventListener("click", showBubbling);
-document.addEventListener("click", showBubbling);
-window.addEventListener("click", showBubbling);
+list.addEventListener("click", showBubbling, { capture: true });
+container.addEventListener("click", showBubbling, { capture: true });
+document.addEventListener("click", showBubbling, { capture: true });
+window.addEventListener("click", showBubbling, { capture: true });
+
+// returns inverse to the order of the events - window first, then document, then container, then list
