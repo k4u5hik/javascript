@@ -15,8 +15,11 @@
       .btn {
         background: #f15025;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
         border: none;
+        display: inline-block;
+        margin: 0.5rem;
       }
       .blue {
         background: blue;
@@ -31,10 +34,12 @@
     </style>
   </head>
   <body>
-    <button class="btn">click me</button>
-    <h1>some heading</h1>
-    <a href="#" id="link">random link</a>
+    <button class="btn">first button</button>
+    <button class="btn">
+      second <strong>button <strong>more nested </strong> </strong>
+    </button>
+    <button class="btn">third button</button>
     <!-- javascript -->
-    <script src="34-eventObject.js"></script>
+    <script src="35-target.js"></script>
   </body>
 </html>
