@@ -11,3 +11,11 @@ console.log(num);
 const multiply = (a, b) => a * b;
 const result = multiply(2, 3);
 console.log(result);
+
+// returning an object
+const getPerson = () => ({
+  name: "Kaushik",
+  age: 25,
+});
+const person = getPerson();
+console.log(person);
