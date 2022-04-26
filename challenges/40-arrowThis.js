@@ -16,10 +16,12 @@ const bob = {
   },
   sayName: function () {
     console.log(this);
+    const self = this;
     setTimeout(function () {
-      console.log(this);
-      console.log(`${this.firstName} ${this.lastName}`);
-    }, 3000);
+      //   console.log(this);
+      console.log(self);
+      console.log(`${self.firstName} ${self.lastName}`);
+    }, 2000);
   },
 };
 
