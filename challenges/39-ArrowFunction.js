@@ -19,3 +19,18 @@ const getPerson = () => ({
 });
 const person = getPerson();
 console.log(person);
+
+// arrow function as a callback function
+const numbers = [1, 2, 3, 4, 5];
+const big = numbers.filter((number) => number > 2);
+console.log(big);
+
+// callback function
+const people = ["Kaushik", "Krishna", "Karthik"];
+const greeting = (name) => `Hello ${name}`;
+const greetPeople = (people, greeting) => {
+  people.forEach((person) => {
+    console.log(greeting(person));
+  });
+};
+greetPeople(people, greeting);
