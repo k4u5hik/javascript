@@ -16,11 +16,9 @@ const bob = {
   },
   sayName: function () {
     console.log(this);
-    const self = this;
-    setTimeout(function () {
+    setTimeout(() => {
       //   console.log(this);
-      console.log(self);
-      console.log(`${self.firstName} ${self.lastName}`);
+      console.log(`${this.firstName} ${this.lastName}`);
     }, 2000);
   },
 };
