@@ -34,3 +34,9 @@ const greetPeople = (people, greeting) => {
   });
 };
 greetPeople(people, greeting);
+
+// arrow function as an event listener callback function
+const btn = document.querySelector("button");
+btn.addEventListener("click", () => {
+  console.log("button clicked");
+});
