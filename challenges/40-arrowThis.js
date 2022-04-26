@@ -1,3 +1,7 @@
+// Arrow functions or fat arrow
+// regular function: this refers to the left of the dot
+// arrow function: this refers to it's current surrounding scope
+
 const bob = {
   firstName: "Bob",
   lastName: "Jones",
@@ -12,7 +16,10 @@ const bob = {
   },
   sayName: function () {
     console.log(this);
-    console.log(`${this.firstName} ${this.lastName}`);
+    setTimeout(function () {
+      console.log(this);
+      console.log(`${this.firstName} ${this.lastName}`);
+    }, 3000);
   },
 };
 
@@ -35,4 +42,4 @@ const anna = {
 };
 
 bob.sayName();
-anna.sayName();
+// anna.sayName();
