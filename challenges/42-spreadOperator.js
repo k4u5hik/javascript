@@ -1,9 +1,8 @@
-const person = {
-  name: "John",
-  age: 30,
-  job: "developer",
-};
+const headings = document.querySelectorAll("h1");
+const result = document.getElementById("result");
 
-const newPerson = { ...person, city: "New York", name: "Susan" };
-console.log(person);
-console.log(newPerson);
+const text = [...headings]
+  .map((item) => `<span> ${item.textContent} </span>`)
+  .join(" ");
+
+result.innerHTML = text;
