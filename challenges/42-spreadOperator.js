@@ -4,6 +4,6 @@ const person = {
   job: "developer",
 };
 
-const newPerson = { ...person, city: "New York" };
+const newPerson = { ...person, city: "New York", name: "Susan" };
 console.log(person);
 console.log(newPerson);
