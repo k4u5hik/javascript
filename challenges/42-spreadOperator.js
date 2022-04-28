@@ -10,3 +10,9 @@ const sayHello = (firstName, lastName, dob) => {
 };
 
 sayHello(...john);
+
+// rest operator
+
+const fruit = ["apple", "banana", "orange", "pineapple"];
+const [first, ...rest] = fruit;
+console.log(first, rest);
