@@ -17,6 +17,7 @@ const fruit = ["apple", "banana", "orange", "pineapple"];
 const [first, ...rest] = fruit;
 console.log(first, rest);
 
+//object destructuring
 const people = {
   name: "John",
   age: 30,
@@ -26,3 +27,13 @@ const people = {
 
 const { job, ...rest1 } = people;
 console.log(job, rest1);
+
+// rest for parameters and spread operators for the arguments
+
+const getAverage = (name1, ...scores) => {
+  console.log(name1);
+  console.log(scores);
+  return (scores[0] + scores[1] + scores[2]) / 3;
+};
+
+getAverage("Kaushik ", 1, 2, 3);
