@@ -16,3 +16,13 @@ sayHello(...john);
 const fruit = ["apple", "banana", "orange", "pineapple"];
 const [first, ...rest] = fruit;
 console.log(first, rest);
+
+const people = {
+  name: "John",
+  age: 30,
+  job: "developer",
+  city: "New York",
+};
+
+const { job, ...rest1 } = people;
+console.log(job, rest1);
