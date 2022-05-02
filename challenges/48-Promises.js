@@ -14,6 +14,20 @@ const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", () => {});
 
-const promise = new Promise((resolve, reject) => {});
+const promise = new Promise((resolve, reject) => {
+  let value = false;
+  if (value) {
+    resolve("Success");
+  } else {
+    reject("Failure");
+  }
+});
+promise
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-console.log(promise);
+// console.log(promise);
