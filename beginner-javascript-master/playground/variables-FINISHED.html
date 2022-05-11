@@ -30,11 +30,12 @@
 </html>
 
 /*
-Strict Mode: Strict mode helps out in a couple ways:
 
--It catches some common coding bloopers, throwing exceptions.
--It prevents, or throws errors, when relatively "unsafe" actions are taken (such as gaining access to the global
-object).
--It disables features that are confusing or poorly thought out.
+Wes Bos opinion on when to use var, let and const:
+
+-const by default - block scoped - anything within the curly brackets
+-otherwise let - block scoped
+-var - not used much - applies only to a few edge cases where let is annoying because of it's block scope. Var is a
+function scoped variable.
 
 */
