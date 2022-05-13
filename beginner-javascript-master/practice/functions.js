@@ -9,5 +9,5 @@ function result(price,qty) {
     return total
 }
 
-const myTotal = result(25,2)
-console.log(myTotal);
+// const myTotal = result(25,2)
+console.log(result(50,5));
