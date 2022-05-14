@@ -24,9 +24,11 @@
 // Callback functions
 // Click Callback
 
-const button = document.querySelector('.clickme');
+const button = document
+  .querySelector(".clickme")
+  .addEventListener("click", handleClick);
 
 function handleClick() {
     console.log('Clicked');
 }
-button.addEventListener('click',handleClick);
+// button.addEventListener('click',handleClick);
