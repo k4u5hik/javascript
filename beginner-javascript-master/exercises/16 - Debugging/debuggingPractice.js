@@ -7,7 +7,7 @@ const people = [
 people.forEach((person, index) => {
   console.table(person.name);
 });
-
+  console.table(people);
 // Console Methods
 
 // Callstack
