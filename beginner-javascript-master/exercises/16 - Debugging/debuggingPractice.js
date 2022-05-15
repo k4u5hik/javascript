@@ -34,7 +34,7 @@ function greet(name) {
 }
 
 function go() {
-  const name = doctorize(greet('Wes'));
+  const name = doctorize(greet('Kaushik'));
   console.log(name);
 }
 
