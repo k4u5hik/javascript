@@ -21,3 +21,5 @@ const pizzaList = document.querySelector('.pizza')
 console.log(pizzaList.textContent)
 console.log(pizzaList.outerHTML)
 pizzaList.insertAdjacentText("beforeend", ` Pizza is good! 🍕`);
+console.log(pizzaList.textContent);
+console.log(pizzaList.outerHTML);
