@@ -12,7 +12,7 @@ const heading = document.querySelector('h2')
 heading.textContent = "Kaushik's new heading"
 console.dir(heading.textContent)
 
-console.log(heading.innerText)
+console.log(heading.innerText) // Aware of CSS styling
 console.log(heading.innerHTML)
 console.log(heading.outerHTML)
 console.log(heading.textContent)
