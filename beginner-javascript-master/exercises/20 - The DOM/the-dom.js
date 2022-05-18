@@ -23,3 +23,14 @@ console.log(pizzaList.outerHTML)
 pizzaList.insertAdjacentText("beforeend", ` Pizza is good! 🍕`);
 console.log(pizzaList.textContent);
 console.log(pizzaList.outerHTML);
+
+const pic = document.querySelector('.photo')
+pic.classList.add('open')
+pic.classList.remove('cool')
+// pic.classList.toggle('round')
+
+function toggleRound(){
+    pic.classList.toggle('round')
+}
+
+pic.addEventListener('click',toggleRound)
