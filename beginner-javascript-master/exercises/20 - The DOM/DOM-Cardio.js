@@ -1,27 +1,76 @@
 // Make a div
 
+const div = document.createElement('div');
+
 // add a class of wrapper to it
+
+div.classList.add('wrapper');
 
 // put it into the body
 
-// make an unordered list
+document.body.appendChild(div);
 
+// make an unordered list
 // add three list items with the words "one, two, three" in them
+
+const ul = `
+<ul>
+  <li>one</li>
+  <li>two</li>
+  <li>three</li>
+  </ul>
+  `
+
 // put that list into the above wrapper
+
+    div.innerHTML = ul;
 
 // create an image
 
+const img = document.createElement('img');
+
 // set the source to an image
+
+img.src = 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60';
+
 // set the width to 250
+img.width = 250;
+img.height = 250;
+
 // add a class of cute
+
+img.classList.add('cute');
+
 // add an alt of Cute Puppy
+
+    img.alt = 'Cute Puppy';
 // Append that image to the wrapper
+
+    div.appendChild(img);
 
 // with HTML string, make a div, with two paragraphs inside of it
 // put this div before the unordered list from above
 
-// add a class to the second paragraph called warning
-// remove the first paragraph
+
+
+
+    const myHTML = `
+    <div class = "myDiv">
+        <p>This is the first paragraph</p>
+        <p>This is the second paragraph</p>
+    </div>
+    `;
+
+    const ulElement = div.querySelector('ul');
+    ulElement.insertAdjacentHTML('beforebegin', myHTML);
+
+    // remove the first paragraph
+    const myDiv = div.querySelector('.myDiv');
+    myDiv.firstElementChild.remove();
+
+    // add a class to the second paragraph called warning
+    myDiv.lastElementChild.classList.add('warning');
+
 
 // create a function called generatePlayerCard that takes in three arguments: name, age, and height
 
