@@ -13,13 +13,13 @@ document.body.appendChild(div);
 // make an unordered list
 // add three list items with the words "one, two, three" in them
 
-const ul = `
+const ul = /*html*/ `
 <ul>
   <li>one</li>
   <li>two</li>
   <li>three</li>
   </ul>
-  `
+  `;
 
 // put that list into the above wrapper
 
@@ -76,10 +76,12 @@ img.classList.add('cute');
 // create a function called generatePlayerCard that takes in three arguments: name, age, and height
 
 function generatePlayerCard (name, age, height) {
- const html = `
+ const html = /*javascript*/ `
  <div class = "playerCard">
  <h2>${name} - Age: ${age}</h2>
- <p>His height is ${height} and in dog years this person would be ${age * 7} human equivalent age. That would be a tall dog</p>
+ <p>His height is ${height} and in dog years this person would be ${
+     age * 7
+   } human equivalent age. That would be a tall dog</p>
  <button class="delete" type="button">&times; Delete</button>
  </div>
 `;
