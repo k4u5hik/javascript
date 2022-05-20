@@ -54,7 +54,8 @@ img.classList.add('cute');
 
 
 
-    const myHTML = `
+    const myHTML = /*html*/ 
+    `
     <div class = "myDiv">
         <p>This is the first paragraph</p>
         <p>This is the second paragraph</p>
@@ -74,6 +75,17 @@ img.classList.add('cute');
 
 // create a function called generatePlayerCard that takes in three arguments: name, age, and height
 
+function generatePlayerCard (name, age, height) {
+ const html = `
+ <div class = "playerCard">
+ <h2>${name} - Age: ${age}</h2>
+ <p>His height is ${height} and in dog years this person would be ${age * 7} human equivalent age. That would be a tall dog</p>
+ <button class="delete" type="button">&times; Delete</button>
+ </div>
+`;
+ return html
+}
+
 // have that function return html that looks like this:
 // <div class="playerCard">
 //   <h2>NAME — AGE</h2>
@@ -81,9 +93,16 @@ img.classList.add('cute');
 // </div>
 
 // make a new div with a class of cards
-
+const cards = document.createElement('div');
+cards.classList.add('cards');
 // make 4 player cards using generatePlayerCard
-
+let cardsHTML = generatePlayerCard('Kaushik', '39', '171');
+cardsHTML += generatePlayerCard('Sachin', '21', '154');
+cardsHTML += generatePlayerCard('Scott', '25', '165');
+cardsHTML += generatePlayerCard('Tushar', '34', '189');
+// console.log(cardsHTML);
+cards.innerHTML = cardsHTML;
+div.insertAdjacentElement('beforebegin', cards);
 // append those cards to the div
 // put the div into the DOM just before the wrapper element
 // Bonus, put a delete Button on each card so when you click it, the whole card is removed
