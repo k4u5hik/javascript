@@ -1,8 +1,8 @@
-const butts = document.querySelector(".butts");
+// const butts = document.querySelector(".butts");
 
-butts.addEventListener("click", function () {
-  console.log("Button Clicked!");
-});
+// butts.addEventListener("click", function () {
+//   console.log("Button Clicked!");
+// });
 
 // listen on multiple items
 
@@ -18,8 +18,8 @@ const buyButtons = document.querySelectorAll("button.buy");
 
 // buyButtons.forEach(handleBuyButtonClick);
 
-buyButtons.forEach(button => {
-    button.addEventListener("click", () => {
-    console.log('You clicked a button!');
-})
-});
+// buyButtons.forEach(button => {
+//     button.addEventListener("click", () => {
+//     console.log('You clicked a button!');
+// })
+// });
