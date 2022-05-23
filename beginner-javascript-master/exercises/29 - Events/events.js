@@ -12,8 +12,8 @@ function buyItem() {
     console.log("You bought something!");
 }
 
-function handleBuyButtonClick(buyButton) {
-    buyButton.addEventListener("click", buyItem);
+function handleBuyButtonClick(e) {
+    e.addEventListener("click", buyItem);
 }
 
 buyButtons.forEach(handleBuyButtonClick);
