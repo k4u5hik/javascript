@@ -23,3 +23,12 @@ const buyButtons = document.querySelectorAll("button.buy");
 //     console.log('You clicked a button!');
 // })
 // });
+
+function handleBuyButtonClick(event){
+    console.log('You clicked a button!');
+    console.log(event.target)
+}
+
+buyButtons.forEach(function(buyButton){
+    buyButton.addEventListener('click', handleBuyButtonClick);
+})
