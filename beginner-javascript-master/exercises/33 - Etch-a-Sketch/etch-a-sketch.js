@@ -3,7 +3,7 @@
 const canvas = document.querySelector('#etch-a-sketch');
 const ctx = canvas.getContext('2d');
 const shakeButton = document.querySelector(".shake");
-const MOVE_AMOUNT = 10;
+const MOVE_AMOUNT = 50;
 
 // setup our canvas for drawing
 // make a variable called height and width from the same properties on our canvas
@@ -16,7 +16,7 @@ let y = Math.floor(Math.random() * height);
 
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
-ctx.lineWidth = 10;
+ctx.lineWidth = 20;
 
 let hue = 0;
 ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
@@ -30,7 +30,7 @@ ctx.stroke(); // draw it
 
 // increment the hue by 1 every time the draw function is called
 function incrementHue(){
-    hue++;
+    hue+=10;
     ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 }
 
