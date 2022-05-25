@@ -28,6 +28,12 @@ ctx.stroke(); // draw it
 
 // write a handler for the MediaKeys
 
+function handleKey(e){
+    e.preventDefault();
+    console.log('handleKey');
+}
+
 // clear/shake function
 
 // listen for arrow keys
+window.addEventListener('keydown', handleKey);
