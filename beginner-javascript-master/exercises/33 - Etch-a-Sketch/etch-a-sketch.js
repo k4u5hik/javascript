@@ -97,5 +97,13 @@ function handleKey(e){
 
 // clear/shake function
 
+function clearCanvas(){
+    canvas.classList.add('shake')
+    canvas.addEventListener('animationend', function(){
+        console.log('done the shake')
+        canvas.classList.remove('shake')
+    }, {once:true})
+}
+
 // listen for arrow keys
 window.addEventListener('keydown', handleKey);
