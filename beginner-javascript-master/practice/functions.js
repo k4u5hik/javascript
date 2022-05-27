@@ -1,4 +1,4 @@
-
+console.log('it works!')
     // const p = document.querySelector('#para1');
     // const c = document.querySelector('.classy');
     // console.log(p)
@@ -25,7 +25,7 @@
 // Click Callback
 
 const button = document
-  .querySelector(".clickme")
+  .querySelector("button")
   .addEventListener("click", handleClick);
 
 function handleClick() {
