@@ -1,3 +1,11 @@
+h1 {
+  font-family: Garamond, serif, Helvetica;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+}
+
 button {
   background-color: #dedede;
   border: 2px solid #000000;
@@ -8,4 +16,5 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 19px;
 }
