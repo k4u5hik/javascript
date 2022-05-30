@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+  <body>
+    <style></style>
+  </body>
+  <img src="./turtle.png" alt="Turt" class="turt" width="200" />
+  <script>
+    const turtle = document.querySelector('.turt')
+    console.log(turtle)
 
+    function handleKeyDown (event) {
+      console.log(event.key)
+    }
 
-<body>
-
-</body>
-
+    window.addEventListener('keydown', handleKeyDown)
+  </script>
 </html>
