@@ -81,9 +81,12 @@
       // console.log(person1.first);
       // const person3 = { ...person1 };
       // When objects and arrays are copied by reference, they are the same object. This is called a shallow copy.
+      // Shallow copy only copies the top level of the object.
 
-      // this is a deep copy.
+      const person3 = _.cloneDeep(person1)
+      // This is a Deep copy.
       // use utility library like lodash _.cloneDeep()
+      // Deep copy will copy all the nested objects.
 
       const person3 = _.cloneDeep(person1)
       person3.first = 'Larry'
